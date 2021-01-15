@@ -83,7 +83,7 @@ function averageWordLength(arr){
 function avg(arr){
   if(arr.length==0){return null;}
   let avarage= sum(arr)/arr.length
-  return avarage;
+  return +(avarage.toFixed(2));
 }
 
 // Iteration #5: Unique arrays
@@ -174,7 +174,7 @@ const matrix = [
 ];
 
 function greatestProduct(matrix){
-  greatestProduct=1;
+  let greatestProduct=1;
   for(let i=0; i<matrix.length-3;i++){
     for(let j=0;j<matrix[i].length-3;j++){
       if(matrix[i][j]*matrix[i][j+1]*matrix[i][j+2]*matrix[i][j+3]>greatestProduct){
